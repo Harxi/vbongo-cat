@@ -51,7 +51,6 @@ fn frame(mut app App) {
         app.tui.flush()
         time.sleep(100 * time.millisecond)
         app.touched = false
-        return
     } else {
         app.tui.draw_text(0, (app.tui.window_height-21)/2, '                               -+=.
                             .*%+:=%*
