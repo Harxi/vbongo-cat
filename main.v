@@ -34,7 +34,7 @@ fn frame(mut app App) {
         time.sleep(100 * time.millisecond)
         app.touched = false
     } else {
-        app.tui.draw_text(0, (app.tui.window_height-21)/2, app.frames[1])
+        app.tui.draw_text(0, (app.tui.window_height-15)/2, app.frames[1])
     }
     app.tui.set_cursor_position(0, 0)
 
