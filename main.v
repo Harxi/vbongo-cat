@@ -5,7 +5,7 @@ import term.ui as tui
 
 struct App {
 mut:
-    tui     &tui.Context = unsafe { nil }
+    tui     &tui.Context   = unsafe { nil }
     frames  []string       = unsafe { [$embed_file('bongo1.frame').to_string(), $embed_file('bongo2.frame').to_string()] }
     touched bool
 }
